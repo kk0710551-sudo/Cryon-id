@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryon ID - Decentralized Identity Protocol</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: #0A192F;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0A192F;
+            border-bottom: 1px solid #495670;
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #64FFDA;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #64FFDA;
+        }
+
+        .hero {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: #64FFDA;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #495670;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #64FFDA;
+            color: #0A192F;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(100, 255, 218, 0.2);
+        }
+
+        .features {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(73, 86, 112, 0.1);
+            border: 1px solid #495670;
+            border-radius: 8px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            border-color: #64FFDA;
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #64FFDA;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: #495670;
+        }
+
+        .tech-stack {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .tech-stack h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tech-item {
+            background: rgba(100, 255, 218, 0.05);
+            border: 1px solid #64FFDA;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .tech-item strong {
+            color: #64FFDA;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #0A192F;
+            border-top: 1px solid #495670;
+            padding: 2rem;
+            text-align: center;
+            color: #495670;
+            margin-top: 4rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                margin-left: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Cryon ID</div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#tech">Tech Stack</a>
+                <a href="#docs">Docs</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Cryon <span>ID</span></h1>
+        <h1 style="font-size: 2rem; margin-top: 1rem;">Decentralized Identity Protocol</h1>
+        <p>Create verifiable, on-chain identities secured by cryptography and stored immutably on the Solana blockchain.</p>
+        <button class="cta-button" onclick="alert('Coming Soon: Connect your Phantom wallet to create your identity!')">
+            Create Identity
+        </button>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>🔐 Wallet Integration</h3>
+                <p>Seamless Phantom wallet connection with multi-wallet support for secure authentication.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📌 IPFS Pinning</h3>
+                <p>Server-side integration with Pinata for secure, decentralized data storage.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⛓️ On-Chain Identity</h3>
+                <p>Anchor program integration for immutable identity records on Solana.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎨 Minimalist Design</h3>
+                <p>Professional, corporate-Web3 aesthetic with custom color palette.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📱 Responsive Layout</h3>
+                <p>Fully responsive design optimized for desktop, tablet, and mobile.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔒 Security First</h3>
+                <p>All sensitive operations handled server-side with environment variables.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-stack" id="tech">
+        <h2>Tech Stack</h2>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <strong>Frontend</strong>
+                <p>Next.js, React, Tailwind CSS</p>
+            </div>
+            <div class="tech-item">
+                <strong>Blockchain</strong>
+                <p>Solana, Anchor, @solana/web3.js</p>
+            </div>
+            <div class="tech-item">
+                <strong>Wallet</strong>
+                <p>Phantom Wallet Adapter</p>
+            </div>
+            <div class="tech-item">
+                <strong>Storage</strong>
+                <p>Pinata IPFS</p>
+            </div>
+            <div class="tech-item">
+                <strong>Styling</strong>
+                <p>Tailwind CSS with Cryon theme</p>
+            </div>
+            <div class="tech-item">
+                <strong>Network</strong>
+                <p>Solana Devnet</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-stack" id="docs">
+        <h2>Color Palette</h2>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <strong style="color: #0A192F;">Deep Navy</strong>
+                <p>#0A192F</p>
+            </div>
+            <div class="tech-item">
+                <strong>#FFFFFF</strong>
+                <p>Primary Text</p>
+            </div>
+            <div class="tech-item">
+                <strong>#64FFDA</strong>
+                <p>Accent</p>
+            </div>
+            <div class="tech-item">
+                <strong>#495670</strong>
+                <p>Secondary</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cryon ID. Decentralized Identity Protocol on Solana.</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">
+                <a href="https://github.com/kk0710551-sudo/Cryon-id" style="color: #64FFDA; text-decoration: none;">GitHub Repository</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
