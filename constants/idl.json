@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "name": "cryon_id",
+  "instructions": [
+    {
+      "name": "initializeProfile",
+      "accounts": [
+        {
+          "name": "user",
+          "isMut": true,
+          "isSigner": true
+        }
+      ],
+      "args": [
+        {
+          "name": "ipfsHash",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
